@@ -1,0 +1,26 @@
+web_app:
+  name: my-web-app
+  version: 1.0
+  environment: production
+
+  database:
+    type: mysql
+    host: localhost
+    port: 5432
+    username: ken
+    password: password
+  
+  server:
+    host: 0.0.0.0
+    port: 8080
+    ssl: true
+    max_connections: 100
+  
+  logging:
+    level: info
+    file_path: /var/log/ngnix/app.log
+    rotation:
+      enabled: true
+      max_size: 100M
+      max_file: 10
+      
