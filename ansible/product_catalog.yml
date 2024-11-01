@@ -1,0 +1,42 @@
+---
+
+catalog:
+  electronics:
+    - name: laptop
+      brand: Dell
+      model: xps-936
+      price: 75000.00
+      availability: in-stack
+      specifications:
+        cpu: intel i7
+        ram: 8GB
+        storage: 1TB SSD
+        color: black
+    
+    - name: smartphone
+      brand: Apple
+      model: 13
+      price: 50000.00
+      availability: out_of_stack
+      specifications:
+        cpu: A14 Bionic
+        ram: 8GB
+        storage: 128GB
+        color: Red
+
+  home_appliances:
+    - name: vaccum-cleaner
+      brand: panasonic
+      price: 3000.00
+      availability: in_stack
+      specifications:
+        bagless: true
+        power: 1200W
+    
+    - name: Microwave Oven
+      brand: Panasonic
+      price: 199.99
+      availability: in_stock
+      specifications:
+        capacity: 1.2 cubic feet
+        wattage: 1000W
