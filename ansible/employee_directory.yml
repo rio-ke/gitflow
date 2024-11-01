@@ -1,0 +1,18 @@
+# employee_directory.yml
+
+employees:
+  - name: ken
+    age: 29
+    dept: IT
+    skills:
+      - code 
+      - devops
+      - linux
+  - name: kenny
+    age: 30
+    dept: DMT
+    skills:
+      - MS excel
+      - ms word
+  
+  

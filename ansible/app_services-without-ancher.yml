@@ -1,0 +1,22 @@
+services:
+  - name: web 
+    replicas: 2
+    port: 80
+    cpu: "500m" 
+    memory: "256Mi"
+    image: mywebapp:latest
+  
+  - name: api
+     replicas: 2
+     port: 8081
+    cpu: "500m"
+    memory: "245Mi"
+    image: mywebapp-api:latest
+  
+  - name: worker
+    replicas: 3
+    port: 9000
+    cpu: "0.5G"
+    memory: "516Mi"
+    image: mywebapp-worker:latest
+
