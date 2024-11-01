@@ -1,11 +1,10 @@
-# employee_directory.yml
-
+---
 employees:
   - name: ken
     age: 29
     dept: IT
     skills:
-      - code 
+      - code
       - devops
       - linux
   - name: kenny
@@ -13,6 +12,4 @@ employees:
     dept: DMT
     skills:
       - MS excel
-      - ms word
-  
-  
+      - ms word# employee_directory.yml

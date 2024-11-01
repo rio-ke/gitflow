@@ -1,23 +1,25 @@
+---
 version: 3
-
-default-service: &default-service
+default-service:
   replicas: 2
-  cpu: "512m"
-  memory: "256Mi"
-
-services: 
+  cpu: 512m
+  memory: 256Mi
+services:
   - name: web
-    <<: *default-service
+    replicas: 2
+    cpu: 512m
+    memory: 256Mi
     port: 80
     image: my-app:latest
-
   - name: api
-    <<: *default-service
+    replicas: 2
+    cpu: 512m
+    memory: 256Mi
     port: 8080
     image: my-app-api:latest
-  
   - name: worker
-    <<: *default-service
+    replicas: 3
+    cpu: 512m
+    memory: 256Mi
     port: 9000
     image: my-app-worker:latest
-    replicas: 3 
