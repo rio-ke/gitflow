@@ -1,0 +1,30 @@
+---
+
+default_servers: &default_servers
+  cpu: 4
+  memory: 4GB
+  storage: 500GB SSD
+
+servers:
+  - type: wep-server
+    <<: &default_servers
+    os: ubuntu 22.04
+    services:
+      - nginx
+      - php-fpm
+  
+  - type: database-server
+    <<: &default_servers
+    os: Ubuntu 22.04
+    services:
+      - Postgresql
+      - Redis
+
+  - type: cache-server
+    <<: &default_servers
+    memory: 32GB
+    os: Ubuntu 22.04
+    services:
+      - Memcached
+      - Redis
+
