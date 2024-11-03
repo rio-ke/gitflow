@@ -1,0 +1,30 @@
+---
+environment: development
+database: 
+  host: localhost
+  port: 5432
+  username: user
+  password: pass
+logging:
+  level: debug
+  output: console
+---
+environment: testing
+database:
+  host: kendsds-dd.com
+  port: 5432
+  user: usd
+  password: paswd
+logging:
+  level: error
+  output: file
+---
+environment: production
+database:
+  host: prdconsd.com
+  port: 5432
+  user: admin
+  password: pasdadds
+logging:
+    level: error
+    output: file

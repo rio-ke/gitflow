@@ -1,0 +1,12 @@
+recipe: 
+  name: mattan curry
+  ingredients:
+    - name: mattan
+      quantity: "2kg"
+    - name: tomatto
+      quantity: 4
+    - name: onion
+      quantity: 5
+    - name: speices 
+      quantity: 1
+  

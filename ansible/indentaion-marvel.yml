@@ -1,0 +1,18 @@
+marvel:
+  studio:
+    - marvel
+  comic:
+    name: spiderman
+    auther: stan lee
+    book: spiderman
+    year: 1960
+  movie: 
+    name: spiderman no way home
+    release_date: 01-06-2002
+    budget: 100M
+    box-office: 500M
+    genre: 
+      - action
+      - superhero
+      - fantaci
+      - fictinal

@@ -1,0 +1,28 @@
+environment: production
+resources:
+  cpu: 2
+  memory: 4Gi
+
+database:
+  host: db.production.example.com
+  username: prod_user
+  password: secure_password
+
+networking:
+  service_url: https://app.production.example.com
+  ports:
+    - 80
+    - 443
+
+scaling:
+  min_instances: 2
+  max_instances: 10
+
+health_checks:
+  path: /health
+  interval: 30s
+  timeout: 5s
+
+logging:
+  level: error
+  log_file: /var/log/app.log
